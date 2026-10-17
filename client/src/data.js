@@ -1,0 +1,107 @@
+export const services = [
+  {
+    slug: 'import',
+    title: 'Import',
+    text: 'Sourcing and bringing suitable products into the UK market.',
+    detail: 'TRISHVI GLOBAL LTD supports the importation of quality food products into the UK market. We work with international suppliers to identify products that align with UK market requirements, coordinating logistics, documentation and delivery from origin to destination. Our import operations cover a range of product categories including spices, pulses, snacks and packaged foods, with a focus on ensuring consistent supply and appropriate documentation for market entry.',
+    points: [
+      'International supplier identification and evaluation',
+      'Product sourcing aligned with UK market demand',
+      'Logistics coordination from origin to UK delivery',
+      'Import documentation and compliance support',
+      'Quality and specification review',
+      'Ongoing supply chain management',
+    ],
+    heroImage: '/assets/img-s/hero-services.png',
+  },
+  {
+    slug: 'export',
+    title: 'Export',
+    text: 'Supporting the movement of products from the UK to international markets.',
+    detail: 'Our export services support businesses looking to move products from the UK into international markets. We assist with identifying suitable buyer opportunities, coordinating export logistics and ensuring products are prepared with the necessary documentation for destination markets. Whether shipping to India, Europe or other global destinations, we work to create reliable, repeatable export channels for UK-based suppliers and manufacturers.',
+    points: [
+      'International market opportunity identification',
+      'Export logistics and shipping coordination',
+      'Destination market requirements assessment',
+      'Documentation preparation and review',
+      'Buyer relationship development',
+      'Multi-market distribution support',
+    ],
+    heroImage: '/assets/img-s/hero-services.png',
+  },
+  {
+    slug: 'product-sourcing',
+    title: 'Product Sourcing',
+    text: 'Finding manufacturers and suppliers according to buyer requirements.',
+    detail: 'Product sourcing is central to what we do at TRISHVI GLOBAL. We work closely with buyers to understand their specific product requirements — including specifications, quality expectations, packaging needs and target pricing — then identify and evaluate suitable manufacturers and suppliers who can deliver against those criteria. Our sourcing network spans India and international markets, with a focus on food products including spices, lentils, snacks and beverages.',
+    points: [
+      'Buyer requirement analysis and product specification',
+      'Manufacturer and supplier identification',
+      'Sample evaluation and quality assessment',
+      'Price negotiation and commercial alignment',
+      'Supplier capability and capacity review',
+      'Ongoing supplier relationship management',
+    ],
+    heroImage: '/assets/img-s/hero-services.png',
+  },
+  {
+    slug: 'product-development',
+    title: 'Product Development',
+    text: 'Working with manufacturers to develop and evaluate products.',
+    detail: 'Our product development service supports businesses from initial concept through to production-ready products. We work with manufacturers to develop formulations, evaluate samples, review technical documentation and prepare products for market entry. Whether creating a new product from scratch or adapting an existing product for a different market, our team coordinates the development process with attention to quality, compliance and commercial viability.',
+    points: [
+      'Concept development and feasibility assessment',
+      'Manufacturer selection for development projects',
+      'Sample development, testing and evaluation',
+      'Formulation and specification refinement',
+      'Packaging design and labelling review',
+      'Production readiness and scale-up coordination',
+    ],
+    heroImage: '/assets/img-s/hero-product-development.png',
+  },
+  {
+    slug: 'private-label',
+    title: 'Private Label',
+    text: 'Supporting businesses with branded and private-label product development.',
+    detail: 'TRISHVI GLOBAL supports businesses looking to develop their own branded or private-label products for retail and wholesale markets. We work with manufacturers to create products under your brand, managing the process from initial product identification and supplier discussions through to packaging development, labelling review and production coordination. Our private-label service is designed for retailers, wholesalers and distributors seeking to offer differentiated products under their own brand.',
+    points: [
+      'Brand and product concept development',
+      'Manufacturer selection for private-label production',
+      'Custom packaging and labelling development',
+      'Minimum order quantity negotiation',
+      'Quality specification and compliance review',
+      'Ongoing production and supply coordination',
+    ],
+    heroImage: '/assets/img-s/hero-services.png',
+  },
+  {
+    slug: 'international-trading',
+    title: 'International Trading',
+    text: 'Connecting suppliers and buyers across international markets.',
+    detail: 'At the core of TRISHVI GLOBAL is our international trading capability. We connect suppliers and buyers across the UK, India and global markets, facilitating trade relationships that deliver value for both parties. Our trading operations encompass sourcing, negotiation, logistics, documentation and delivery — providing an end-to-end service that simplifies the complexities of international food trade.',
+    points: [
+      'UK, India and global market connections',
+      'Buyer-supplier matching and relationship facilitation',
+      'Trade negotiation and commercial structuring',
+      'International logistics and freight coordination',
+      'Trade documentation and compliance management',
+      'Long-term trade partnership development',
+    ],
+    heroImage: '/assets/img-s/hero-services.png',
+  },
+];
+
+export const categories = [
+  { slug: 'whole-spices', name: 'Whole Spices', image: '/assets/img-s/Whole Spices.webp', text: 'Premium-quality whole spices sourced from trusted farms for natural aroma, strong flavour and export-grade quality.', products: ['Red Chilli Whole', 'Turmeric Finger Whole', 'Cinnamon', 'Clove', 'Dry Ginger', 'Black Pepper', 'Star Anise', 'Green Cardamom', 'Cumin Seed', 'Coriander Whole', 'Fenugreek Whole', 'Curry Leaf', 'Black Pepper Whole', 'Fennel', 'Dill Seed', 'Ajwain', 'Dry Coconut', 'Mustard Seeds', 'Black & Green Cardamom', 'Bay Leaves', 'Dry Red Chilli', 'Sesame Seeds', 'Asafoetida'] },
+  { slug: 'spice-powders', name: 'Spice Powders', image: '/assets/img-s/gif-02.gif', text: 'Freshly processed spice powders with consistent colour, aroma and flavour for international markets.', products: ['Red Chilli Powder', 'Turmeric Powder', 'Cumin Powder', 'Ginger Powder', 'Fennel Powder', 'Curry Leaf Powder', 'Garlic Powder', 'Cinnamon Powder', 'Coconut Powder', 'Black Pepper Powder'] },
+  { slug: 'spice-blends', name: 'Spice Blends', image: '/assets/img-s/p-004.png', text: 'Convenient, flavourful spice blends prepared for authentic cooking and retail requirements.', products: ['Chaat Masala', 'Tea Masala', 'Fish Curry Masala', 'Meat Masala', 'Kebab Masala', 'Tandoori Masala', 'Chicken Curry Masala', 'Garam Masala', 'Sambar Masala', 'Paneer Masala', 'Ghosht Masala', 'Peri Peri Masala', 'Buttermilk Masala', 'Rajma Masala', 'Chole Masala', 'Biryani Masala'] },
+  { slug: 'pulses-lentils', name: 'Pulses & Lentils', image: '/assets/img-s/dals-01.jpg', text: 'Quality pulses and lentils selected for dependable supply and everyday cooking needs.', products: ['Chickpeas', 'Black Chickpeas', 'Pigeon Peas', 'Split Green Gram', 'Whole Green Gram', 'Red Lentils', 'Black Gram', 'Bengal Gram', 'Yellow Split Peas', 'Kidney Beans', 'Moth Beans', 'Horse Gram'] },
+  { slug: 'pickles', name: 'Pickles', image: '/assets/img-s/p-07.webp', text: 'Traditional Indian pickles with bold flavour profiles for retail and food-service opportunities.', products: ['Mango Pickles', 'Lemon Pickles', 'Mixed Vegetable Pickles', 'Chilli Pickles', 'Ginger Pickle'] },
+  { slug: 'snacks-packaged-foods', name: 'Snacks & Packaged Foods', image: '/assets/img-s/Snacks.jpg', text: 'Popular Indian snacks and packaged foods suited to wholesale, retail and international distribution.', products: ['Papad', 'Sev', 'Chivda', 'Kachori', 'Chakli', 'Namkeen', 'Khakhra', 'Roasted Peanuts', 'Roasted Chana'] },
+  { slug: 'tea-coffee', name: 'Tea & Coffee', image: '/assets/img-s/tea-02.jpg', text: 'Tea and beverage products selected for their quality, flavour and market appeal.', products: ['Black Tea', 'Assam Tea', 'Green Tea', 'Jaljeera'] }
+];
+
+export const contact = {
+  location: 'United Kingdom',
+  emails: ['info@trishviglobal.com', 'business@trishviglobal.com', 'development@trishviglobal.com']
+};
