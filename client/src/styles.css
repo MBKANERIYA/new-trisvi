@@ -1510,21 +1510,24 @@ body main { padding-top: var(--header-height); }
    ══════════════════════════════════════════════ */
 @media (max-width: 920px) {
   :root { --header-height: 68px; }
-  .menu-toggle { display: block; }
+  .brand-logo { height: 52px; }
+  .menu-toggle { display: block; z-index: 60; }
+  .site-header { z-index: 100; }
   .main-nav {
     display: flex;
     position: fixed;
-    top: var(--header-height);
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    padding: 24px;
+    -webkit-backdrop-filter: blur(20px);
+    padding: calc(var(--header-height) + 16px) 24px 24px;
     flex-direction: column;
     gap: 0;
     overflow-y: auto;
-    z-index: 40;
+    z-index: 55;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1596,6 +1599,8 @@ body main { padding-top: var(--header-height); }
    RESPONSIVE — Mobile
    ══════════════════════════════════════════════ */
 @media (max-width: 560px) {
+  :root { --header-height: 60px; }
+  .brand-logo { height: 44px; }
   .section,
   .facts,
   .process-preview { padding-top: 60px; padding-bottom: 60px; }

@@ -33,5 +33,21 @@
 - `knowledge-base/changelog.md` — Documented changes
 **Commit**: `679c851`
 
+## 2026-10-17 — Vercel Deployment Configuration
+**What**: Added `vercel.json` config and serverless API functions for Vercel deployment
+**Why**: Deploy the site to Vercel (serverless platform) — Express server can't run as-is on Vercel
+**Files Changed**:
+- `vercel.json` — Build command, output directory, SPA rewrite rules
+- `api/health.js` — Serverless GET /api/health endpoint
+- `api/contact.js` — Serverless POST /api/contact endpoint
+- `api/enquiries.js` — Serverless POST /api/enquiries endpoint
+**Commit**: `77d9e1e`
 
-
+## 2026-10-17 — Real Contact Details Added
+**What**: Updated contact info across the site with real company details: email (trishvigloballtd@gmail.com), two phone contacts (Kairav Patel +44 7916221136, Shad Sheikh +91 7069862072), and full UK address (11 Alexandra Street, Thurmaston, Leicester, LE4 8FD)
+**Why**: User provided real business contact information to replace placeholder data
+**Files Changed**:
+- `client/src/data.js` — Replaced placeholder emails with real contact object (email, phone1/name1, phone2/name2, address)
+- `client/src/App.jsx` — Updated Contact page sidebar with address + phone contacts, added "Our Office" section to About page with 4-card grid, updated Footer with email/phones/address
+- `client/src/styles.css` — Added `.about-contact`, `.about-contact-grid`, `.about-contact-card` styles with responsive breakpoints
+**Commit**: `0596014`
