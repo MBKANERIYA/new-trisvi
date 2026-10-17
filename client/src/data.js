@@ -103,5 +103,18 @@ export const categories = [
 
 export const contact = {
   location: 'United Kingdom',
-  emails: ['info@trishviglobal.com', 'business@trishviglobal.com', 'development@trishviglobal.com']
+  email: 'trishvigloballtd@gmail.com',
+  emails: ['trishvigloballtd@gmail.com'],
+  phone1: '+44 7916221136',
+  name1: 'Kairav Patel',
+  phone2: '+91 7069862072',
+  name2: 'Shad Sheikh',
+  address: {
+    line1: '11 Alexandra Street',
+    line2: 'Thurmaston',
+    city: 'Leicester',
+    postcode: 'LE4 8FD',
+    country: 'United Kingdom',
+  },
 };
+

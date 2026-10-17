@@ -365,10 +365,15 @@ function Footer() {
         </div>
         <div>
           <h3>Contact</h3>
-          <p>{contact.location}</p>
-          {contact.emails.map((email) => (
-            <a key={email} href={`mailto:${email}`}>{email}</a>
-          ))}
+          <a href={`mailto:${contact.email}`}>{contact.email}</a>
+          <a href={`tel:${contact.phone1.replace(/\s/g, '')}`}>{contact.phone1}</a>
+          <a href={`tel:${contact.phone2.replace(/\s/g, '')}`}>{contact.phone2}</a>
+          <p style={{ marginTop: '0.5rem', lineHeight: '1.6', fontSize: '0.85rem', opacity: 0.8 }}>
+            {contact.address.line1},<br />
+            {contact.address.line2},<br />
+            {contact.address.city}, {contact.address.postcode}<br />
+            {contact.address.country}
+          </p>
         </div>
       </div>
       <div className="copyright">
@@ -813,6 +818,27 @@ function About() {
           <span>Quality control</span>
         </div>
       </section>
+      <section className="section about-contact">
+        <SectionHeading eyebrow="Reach Us" title="Our Office" />
+        <div className="about-contact-grid">
+          <div className="about-contact-card">
+            <h4>Address</h4>
+            <p>{contact.address.line1}<br />{contact.address.line2}<br />{contact.address.city}, {contact.address.postcode}<br />{contact.address.country}</p>
+          </div>
+          <div className="about-contact-card">
+            <h4>Email</h4>
+            <a href={`mailto:${contact.email}`}>{contact.email}</a>
+          </div>
+          <div className="about-contact-card">
+            <h4>{contact.name1}</h4>
+            <a href={`tel:${contact.phone1.replace(/\s/g, '')}`}>{contact.phone1}</a>
+          </div>
+          <div className="about-contact-card">
+            <h4>{contact.name2}</h4>
+            <a href={`tel:${contact.phone2.replace(/\s/g, '')}`}>{contact.phone2}</a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
@@ -1080,9 +1106,21 @@ function Contact() {
         <aside>
           <img src="/assets/contact-us-image.jpg" alt="Contact TRISHVI Global" loading="lazy" />
           <h3>United Kingdom</h3>
-          {contact.emails.map((email) => (
-            <a key={email} href={`mailto:${email}`}>{email}</a>
-          ))}
+          <p style={{ lineHeight: '1.7', marginBottom: '1rem' }}>
+            {contact.address.line1}<br />
+            {contact.address.line2}<br />
+            {contact.address.city}, {contact.address.postcode}<br />
+            {contact.address.country}
+          </p>
+          <a href={`mailto:${contact.email}`}>{contact.email}</a>
+          <div style={{ marginTop: '1rem' }}>
+            <p style={{ fontWeight: 600 }}>{contact.name1}</p>
+            <a href={`tel:${contact.phone1.replace(/\s/g, '')}`}>{contact.phone1}</a>
+          </div>
+          <div style={{ marginTop: '0.75rem' }}>
+            <p style={{ fontWeight: 600 }}>{contact.name2}</p>
+            <a href={`tel:${contact.phone2.replace(/\s/g, '')}`}>{contact.phone2}</a>
+          </div>
         </aside>
       </section>
     </>

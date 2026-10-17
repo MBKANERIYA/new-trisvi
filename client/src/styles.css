@@ -1234,6 +1234,47 @@ body main { padding-top: var(--header-height); }
   padding-bottom: 80px;
 }
 
+/* About page — Contact section */
+.about-contact { text-align: center; }
+.about-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.about-contact-card {
+  background: var(--soft);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  text-align: center;
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+.about-contact-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+.about-contact-card h4 {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--deep);
+  margin-bottom: 8px;
+}
+.about-contact-card p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.about-contact-card a {
+  font-size: 14px;
+  color: var(--primary-dark);
+  font-weight: 500;
+  word-break: break-all;
+  transition: color var(--transition-fast);
+}
+.about-contact-card a:hover { color: var(--primary); }
+
+
 /* ══════════════════════════════════════════════
    PRODUCT DETAIL
    ══════════════════════════════════════════════ */
@@ -1548,6 +1589,7 @@ body main { padding-top: var(--header-height); }
   .home-faq { grid-template-columns: 1fr; gap: 36px; }
   .home-faq-image img { height: 320px; }
   .products-top { flex-direction: column; align-items: flex-start; }
+  .about-contact-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* ══════════════════════════════════════════════
@@ -1598,6 +1640,7 @@ body main { padding-top: var(--header-height); }
   .home-faq-image img { height: 240px; }
   .home-faq-item button { padding: 16px 18px; font-size: 15.5px; }
   .home-faq-item p { padding: 0 18px 18px; }
+  .about-contact-grid { grid-template-columns: 1fr; }
 }
 
 /* ══════════════════════════════════════════════
