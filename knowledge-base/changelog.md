@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-17 — Fix Mobile Header Overlay & Sizing
+**What**: Fixed mobile header issues — nav overlay, logo sizing, z-index layering
+**Why**: Mobile menu wasn't properly covering page content; logo overflowed header container
+**Files Changed**: `client/src/styles.css`
+**Commit**: `a26a650`
+- Mobile nav now covers full viewport (top: 0) with padding for header clearance
+- Logo reduced to 52px (tablet) / 44px (mobile) from 72px to fit header
+- Header z-index bumped to 100, nav to 55, menu-toggle to 60 for proper layering
+- Added `-webkit-backdrop-filter` for Safari mobile support
+- Added `--header-height: 60px` for mobile breakpoint (≤560px)
+
 ## 2026-10-15 — Premium UI/UX Redesign
 **What**: Complete visual redesign with premium animations, smooth scrolling, and modern UI
 **Why**: Transform the existing functional website into a premium international B2B trading brand
